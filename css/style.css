@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -30,6 +31,9 @@ ul {
 .hide {
   display: none;
 }
+.position-relative {
+  position: relative;
+}
 
 /*+++++++++++++++++++HEADER++++++++++++++++++*/
 
@@ -40,7 +44,7 @@ ul {
 
 header {
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 18px;
   color: #8b959e;
   position:relative;
 }
@@ -67,28 +71,53 @@ header {
 }
 
 .drop-down-container > span {
-  padding: 5px;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .drop-down-container  li {
-  line-height: 40px;
+  line-height: 50px;
+  font-size: 18px;
 }
 
-/*features list section*/
-.features-container {
+/*containers-lists position and style */
+.features-container,
+.plans-container,
+.aboutUs-container,
+.help-container  {
   position: absolute;
-  right: 0px;
-  top: 0px;
-  transform: translateY(30%);
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 0px 5px 15px  #8b959e;
 }
-
-.features-list {
-  width: 200px;
-  padding: 10px;
+.features-container {
+  right: 0px;
+  top: 0px;
+  transform: translateY(20%);
 }
+.plans-container,
+.aboutUs-container,
+.help-container {
+  left: 0px;
+  top: 0px;
+}
+.plans-container,
+.help-container{
+  transform: translateY(27%);
+}
+.aboutUs-container{
+  transform: translateY(13%);
+}
+
+/*lists*/
+.features-list,
+.plans-list,
+.aboutUs-list,
+.help-list {
+  width: 200px;
+  padding: 20px;
+}
+
 
 /*buttons of header*/
 div[class^="button"] > button{
@@ -96,6 +125,10 @@ div[class^="button"] > button{
   font-size: 20px;
   border-color: transparent;
   border-radius: 10px;
+  cursor: pointer;
+}
+div[class*="sign"]{
+  margin-right: 20px;
 }
 .button-sign-header-container button{
   background-color: #f0f0f0;
