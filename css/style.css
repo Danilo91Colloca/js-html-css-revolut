@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #8b959e;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+
+.page-wrapper{
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.logo,
+.go-to-area,
+.drop-down-container,
+.button-container {
+  display: inline-block;
+}
+.logo > img {
+  width: 45px;
+  vertical-align: middle;
+}
+
+header {
+  height: 120px;
+  justify-content: space-between;
+  font-size: 18px;
+  color: #8b959e;
+}
+
+.header-left,
+.header-right {
+  line-height: 120px;
+}
