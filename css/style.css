@@ -11,8 +11,15 @@ ul {
   list-style: none;
 }
 
+.clearfix {
+  content: "";
+  clear: both;
+  display: table;
 
-.page-wrapper{
+}
+
+
+.center-of-dom{
   margin: 0 auto;
   width: 1200px;
 }
@@ -21,10 +28,25 @@ ul {
   display: flex;
 }
 
+.header-container{
+  height: 100px;
+  box-shadow: 3px 3px 3px  #8b959e;
+}
+
+header {
+  justify-content: space-between;
+  font-size: 20px;
+  color: #8b959e;
+  position:relative;
+}
+
+.header-left,
+.header-right {
+  line-height: 100px;
+}
+
 .logo,
-.go-to-area,
-.drop-down-container,
-.button-container {
+.go-to-area {
   display: inline-block;
 }
 .logo > img {
@@ -32,14 +54,40 @@ ul {
   vertical-align: middle;
 }
 
-header {
-  height: 120px;
-  justify-content: space-between;
-  font-size: 18px;
-  color: #8b959e;
+.drop-down-container,
+.button-sign-header-container {
+  margin-right: 15px;
+}
+.drop-down-container > span {
+  padding: 5px;
+}
+.drop-down-container  li {
+  line-height: 40px;
+}
+.list-container {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transform: translateY(30%);
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px  #8b959e;
+}
+.features-list {
+  width: 200px;
+  padding: 10px;
 }
 
-.header-left,
-.header-right {
-  line-height: 120px;
+div[class^="button"] > button{
+  padding: 10px;
+  font-size: 20px;
+  border-color: transparent;
+  border-radius: 10px;
+}
+.button-sign-header-container button{
+  background-color: #f0f0f0;
+}
+.button-get-header-container button{
+  color: #fff;
+  background-color: #191c1f;
 }
