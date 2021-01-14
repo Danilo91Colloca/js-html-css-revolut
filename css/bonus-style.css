@@ -34,6 +34,9 @@ ul {
 .position-relative {
   position: relative;
 }
+.font-black{
+  color: #000;
+}
 
 /*+++++++++++++++++++HEADER++++++++++++++++++*/
 
@@ -165,13 +168,23 @@ div[class*="sign"]{
 }
 .button-sign-header-container button{
   background-color: #f0f0f0;
+  transition: 1s;
 }
+.button-sign-header-container button:hover {
+  background-color: #d0d0d0;
+}
+
 .button-get-header-container button{
   color: #fff;
   background-color: #191c1f;
+  transition: 1s;
+}
+.button-get-header-container button:hover{
+  opacity: 0.8;
 }
 
 li > a:hover,
-.go-to-area > a:hover {
+.go-to-area > a:hover,
+.drop-down-container > span:hover {
   color:black;
 }
