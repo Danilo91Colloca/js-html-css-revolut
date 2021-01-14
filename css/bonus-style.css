@@ -135,26 +135,19 @@ header {
 }
 
 /*coming-soon blue-sign*/
-.notAvailable{
+.notAvailable > span{
   color: #babbbc;
 }
-.coming-soon.comingSoon1Position{
-  position:absolute;
-  right: 0px;
-  top:0px;
-  transform: translateY(-30%);
-  color: #00f;
-  font-size: 10px;
-}
-.coming-soon.comingSoon2Position{
-  position:absolute;
-  right: 0px;
-  top:0px;
-  transform: translate(-60%, -30%);
-  color: #00f;
-  font-size: 10px;
-}
 
+.notAvailable > span::after{
+  content: 'COMING SOON';
+  position:absolute;
+  top:0px;
+  transform: translate(-10%, -30%);
+  color: #00f;
+  font-size: 9px;
+  line-height: 15px;
+}
 /*buttons of header*/
 div[class^="button"] > button{
   padding: 10px;
